@@ -1,12 +1,12 @@
-# Progress Tracker
+# Progressive
 
-![Progress Tracker Logo](https://github.com/h8moss/progress-tracker/raw/main/src-tauri/icons/128x128.png)
+![Progressive Logo](https://github.com/h8moss/progressive/raw/main/src-tauri/icons/128x128.png)
 
 A simple, open-source TODO list and progress tracker for Windows. Built with ❤️ using Tauri and Svelte.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub stars](https://img.shields.io/github/stars/h8moss/progress-tracker.svg)](https://github.com/h8moss/progress-tracker/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/h8moss/progress-tracker.svg)](https://github.com/h8moss/progress-tracker/issues)
+[![GitHub stars](https://img.shields.io/github/stars/h8moss/progressive.svg)](https://github.com/h8moss/progressive/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/h8moss/progressive.svg)](https://github.com/h8moss/progressive/issues)
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -21,15 +21,13 @@ A simple, open-source TODO list and progress tracker for Windows. Built with ❤
 
 ## 🌟 Features
 
-### 📊 Nested Tasks
-Organize your work with hierarchical task structures. Break down complex projects into manageable subtasks.
-
-![Nested Tasks Demo](https://github.com/h8moss/progress-tracker/assets/43828996/8caff440-8763-409a-b100-11ae87fd14fd)
+### 📊 Nested and slider tasks
+Organize your work with hierarchical task structures. Break down complex projects into manageable subtasks and keep exact progress on each of them.
+![Nested and slider tasks demo](https://github.com/user-attachments/assets/39b6dd4f-aae9-4f2c-b2e9-5a5f3cd598b0)
 
 ### ⚖️ Task Weights
 Assign importance to your tasks. Heavier tasks contribute more to your overall progress.
-
-![Task Weights Demo](https://github.com/h8moss/progress-tracker/assets/43828996/24107f7d-bb17-4acd-bc13-6db4cff461c7)
+![Task weights demo](https://github.com/user-attachments/assets/35c0c870-9e79-4ce3-ab2e-be5d9f3fafb5)
 
 ### 🔢 Weight Interpretation
 Weights can be interpreted and rendered as different units, making it easier to understand task importance in various contexts.
@@ -49,11 +47,11 @@ Personalize your experience with custom color schemes.
 ## 📥 Installation
 
 ### Windows
-1. Visit the [Releases page](https://github.com/h8moss/progress-tracker/releases) on GitHub.
+1. Visit the [Releases page](https://github.com/h8moss/progressive/releases) on GitHub.
 2. Download the latest version of the application.
 3. Run the installer and follow the prompts.
 
-### Building for source (Windows, Linux and MacOS)
+### Building from source (Windows, Linux and MacOS)
 > [!WARNING]
 > The application has only been tested on Windows and was designed with Windows in mind. It may or may not work correctly on other systems.
 > 
@@ -66,8 +64,8 @@ Personalize your experience with custom color schemes.
 
 3. Clone the repository:
    ```bash
-   git clone https://github.com/h8moss/progress-tracker
-   cd progress-tracker
+   git clone https://github.com/h8moss/progressive
+   cd progressive
    ```
 4. Get your current target's triple by running this command:
     ```
@@ -80,7 +78,7 @@ Personalize your experience with custom color schemes.
     Remember this value for next step
 
 5. Move ffprobe from the bin folder in ffmpeg to
-    `path/to/progress-tracker/src-tauri/binaries`
+    `path/to/progressive/src-tauri/binaries`
     and rename it to:
     `ffprobe-{TARGET TRIPLE FROM PREVIOUS STEP}`
 
@@ -93,10 +91,10 @@ Personalize your experience with custom color schemes.
    ```bash
    npm run tauri build
    ```
-If you encounter any issues during installation or have suggestions for improving cross-platform support, please open an issue on our [GitHub repository](https://github.com/h8moss/progress-tracker/issues).
+If you encounter any issues during installation or have suggestions for improving cross-platform support, please open an issue on our [GitHub repository](https://github.com/h8moss/progressive/issues).
 ## 🖱️ Usage
 
-1. Launch Progress Tracker from your applications menu or desktop shortcut.
+1. Launch Progressive from your applications menu or desktop shortcut.
 2. Here you may start a new tracker or open an existing one
 3. To add new tasks right click anywhere within the main task and click "new child" or press the big plus button at the bottom.
 4. To create subtasks first right click any existing task and click "make childful", then right click it and click "new child"
@@ -105,7 +103,7 @@ If you encounter any issues during installation or have suggestions for improvin
 
 ### Creating Custom Themes
 
-1. Navigate to `AppData/Roaming/com.h8m0ss.progress-tracker/themes`.
+1. Navigate to `AppData/Roaming/com.h8m0ss.progressive/themes`.
 2. Create a new JSON file for each theme.
 3. Define the theme properties:
 
@@ -121,7 +119,7 @@ If you encounter any issues during installation or have suggestions for improvin
 }
 ```
 
-For more details, check out the [default themes](https://github.com/h8moss/progress-tracker/blob/main/src/lib/ProgressNode/constants.ts).
+For more details, check out the [default themes](https://github.com/h8moss/progressive/blob/main/src/lib/ProgressNode/constants.ts).
 
 ## 🤝 Contributing
 
@@ -143,13 +141,13 @@ We welcome contributions! Here's how you can help:
 ## ❓ Frequently Asked Questions
 
 **Q: Can I sync my tasks across multiple devices?**
-A: Progress Tracker is, and will always remain, a fully offline application, we will never send your tasks over to a server, that being said, you can use an application like [syncthing](https://syncthing.net/) to keep your files perpetually synced across devices
+A: Progressive is, and will always remain, a fully offline application, we will never send your tasks over to a server, that being said, you can use an application like [syncthing](https://syncthing.net/) to keep your files perpetually synced across devices
 
 **Q: Is there a mobile version available?**
 A: Absolutely no!!!! This is something that we do not have planned as it would require a full rewrite of the application
 
 **Q: How can I report a bug or request a feature?**
-A: Please use our [GitHub Issues](https://github.com/h8moss/progress-tracker/issues) page to report bugs or suggest new features.
+A: Please use our [GitHub Issues](https://github.com/h8moss/progressive/issues) page to report bugs or suggest new features.
 
 ## 📄 License
 
