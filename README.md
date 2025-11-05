@@ -1,6 +1,6 @@
-# Progress Tracker
+# Progressive
 
-![Progress Tracker Logo](https://github.com/h8moss/progress-tracker/raw/main/src-tauri/icons/128x128.png)
+![Progressive Logo](https://github.com/h8moss/progress-tracker/raw/main/src-tauri/icons/128x128.png)
 
 A simple, open-source TODO list and progress tracker for Windows. Built with ❤️ using Tauri and Svelte.
 
@@ -94,7 +94,7 @@ Personalize your experience with custom color schemes.
 If you encounter any issues during installation or have suggestions for improving cross-platform support, please open an issue on our [GitHub repository](https://github.com/h8moss/progress-tracker/issues).
 ## 🖱️ Usage
 
-1. Launch Progress Tracker from your applications menu or desktop shortcut.
+1. Launch Progressive from your applications menu or desktop shortcut.
 2. Here you may start a new tracker or open an existing one
 3. To add new tasks right click anywhere within the main task and click "new child" or press the big plus button at the bottom.
 4. To create subtasks first right click any existing task and click "make childful", then right click it and click "new child"
@@ -141,7 +141,7 @@ We welcome contributions! Here's how you can help:
 ## ❓ Frequently Asked Questions
 
 **Q: Can I sync my tasks across multiple devices?**
-A: Progress Tracker is, and will always remain, a fully offline application, we will never send your tasks over to a server, that being said, you can use an application like [syncthing](https://syncthing.net/) to keep your files perpetually synced across devices
+A: Progressive is, and will always remain, a fully offline application, we will never send your tasks over to a server, that being said, you can use an application like [syncthing](https://syncthing.net/) to keep your files perpetually synced across devices
 
 **Q: Is there a mobile version available?**
 A: Absolutely no!!!! This is something that we do not have planned as it would require a full rewrite of the application

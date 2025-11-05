@@ -20,8 +20,8 @@
       "binaries/ffprobe"
     ]
   },
-  "productName": "Progress Tracker",
-  "mainBinaryName": "Progress Tracker",
+  "productName": "Progressive",
+  "mainBinaryName": "Progressive",
   "version": "2.1.1",
   "identifier": "com.h8m0ss.progress-tracker",
   "plugins": {
@@ -53,7 +53,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Progress Tracker",
+        "title": "Progressive",
         "width": 800,
         "height": 600,
         "useHttpsScheme": true
