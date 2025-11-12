@@ -60,7 +60,7 @@ modules:
     sources:
       # - type: git
       #   url: https://github.com/h8moss/progressive.git
-      #   tag: app-v2.1.1
+      #   tag: app-v2.2.0
       #   # If you don't have a v2.3.0 tag, use branch instead:
       #   # branch: main
       #   # commit: <specific-commit-hash>
