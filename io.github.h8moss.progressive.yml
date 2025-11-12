@@ -71,7 +71,7 @@ modules:
         # branch: main
         # commit: <specific-commit-hash>
       - node-sources.json
-      - src-tauri/cargo-sources.json
+      - cargo-sources.json
 
       - type: archive
         url: https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-lgpl-shared.tar.xz
