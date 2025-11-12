@@ -1,6 +1,6 @@
 [package]
 name = "progressive"
-version = "2.1.1"
+version = "2.2.0"
 description = "A Tauri App"
 authors = ["you"]
 license = ""
@@ -13,13 +13,13 @@ edition = "2021"
 tauri-build = { version = "2", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
+tauri = { version = "2", features = ["native-tls"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tauri-plugin-fs = "2"
 tauri-plugin-dialog = "2"
 tauri-plugin-shell = "2"
-regex = "1.11.1"
+regex = "1.12.2"
 tauri-plugin-process = "2"
 
 [features]

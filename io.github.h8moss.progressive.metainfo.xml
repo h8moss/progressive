@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.h8moss.progressive</id>
+  <developer id="io.github.h8moss">
+    <name>H8moss</name>
+  </developer>
+  <name>Progressive</name>
+  <summary>A simple Progress tracker for video-series and other tasks</summary>
+  <content_rating type="oars-1.1" />
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>
+      A simple, open-source TODO list and progress tracker for Windows and linux. Built with love using Tauri and Svelte.
+    </p>
+    <p>
+        Create a simple tasklist, add sub-tasks and tasks with progress. See the overall progress you have accomplished.
+    </p>
+  </description>
+  <launchable type="desktop-id">io.github.h8moss.progressive.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/h8moss/progressive/refs/heads/main/screenshots/screenshot1.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/h8moss/progressive</url>
+  <releases>
+    <release version="2.2.0" date="2025-11-12"/>
+  </releases>
+</component>

@@ -108,6 +108,12 @@ async fn get_video_duration(app: tauri::AppHandle, path: String) -> f32 {
     result
 }
 
+#[tauri::command]
+fn is_flatpak() -> bool {
+    std::env::var("FLATPAK_ID").is_ok() || 
+    std::path::Path::new("/.flatpak-info").exists()
+}
+
 fn main() {
     tauri::Builder::default()
         .plugin(tauri_plugin_process::init())
@@ -122,6 +128,7 @@ fn main() {
             read_file,
             write_file,
             read_folder,
+            is_flatpak,
         ])
         .setup(|app| {
             app.listen("quit-true", |event| {
