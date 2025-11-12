@@ -21,7 +21,7 @@
     ]
   },
   "productName": "Progressive",
-  "mainBinaryName": "Progressive",
+  "mainBinaryName": "progressive",
   "version": "2.1.1",
   "identifier": "com.h8m0ss.progressive",
   "plugins": {
