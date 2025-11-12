@@ -2,7 +2,7 @@
 
 ![Progressive Logo](https://github.com/h8moss/progressive/raw/main/src-tauri/icons/128x128.png)
 
-A simple, open-source TODO list and progress tracker for Windows. Built with ❤️ using Tauri and Svelte.
+A simple, open-source TODO list and progress tracker for Windows and Linux. Built with ❤️ using Tauri and Svelte.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub stars](https://img.shields.io/github/stars/h8moss/progressive.svg)](https://github.com/h8moss/progressive/stargazers)
