@@ -85,7 +85,7 @@
       stopColorA="#2d99fc"
       stopColorB="#2a87ff"
     />
-    <p>Progress Tracker</p>
+    <p>Progressive</p>
   </div>
 {:else if idle}
   <slot />
