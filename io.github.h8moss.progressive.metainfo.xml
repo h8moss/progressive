@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.h8moss.progressive</id>
+  <name>Progressive</name>
+  <summary>Brief description of your app</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>Longer description of what your app does</p>
+  </description>
+  <url type="homepage">https://github.com/h8moss/progressive</url>
+  <releases>
+    <release version="2.3.0" date="2024-11-11"/>
+  </releases>
+</component>
