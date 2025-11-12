@@ -21,6 +21,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/h8moss/progressive/refs/heads/main/screenshots/screenshot1.png</image>
+      <caption>Main application screen</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/h8moss/progressive</url>
