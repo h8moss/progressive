@@ -5,6 +5,7 @@
   import LogoSvg from "./LogoSVG.svelte";
   import RaisedButton from "./RaisedButton.svelte";
   import { writable } from "svelte/store";
+  import { invoke } from "@tauri-apps/api/core";
 
   let updateStatus:
     | "before-check"
@@ -37,10 +38,20 @@
   let update: Update | null = null;
 
   const checkForUpdates = async () => {
-    update = await check();
-    if (update) {
-      updateStatus = "request-update";
-    } else {
+    try {
+      const isFlatpak = await invoke('is_flatpak')
+      if (isFlatpak) {
+        updateStatus = "idle";
+        return;
+      }
+      update = await check();
+      if (update) {
+        updateStatus = "request-update";
+      } else {
+        updateStatus = "idle";
+      }
+    } catch (e) {
+      console.error(e);
       updateStatus = "idle";
     }
   };
