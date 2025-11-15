@@ -10,9 +10,6 @@
     emit("open");
   };
 
-  const onNewFromFolder = async () => {
-    emit("new-folder", "");
-  };
 </script>
 
 <div class="content col">
@@ -22,15 +19,6 @@
       <h2>Start</h2>
       <button on:click={onOpen}>Open...</button>
       <button on:click={onNew}>New...</button>
-      <div class="new-from-folder-button">
-        <button on:click={onNewFromFolder}>New from folder...</button>
-        <div
-          class="question"
-          data-popup="Create a progress tracker designed for video-series, will make a task out of every folder and video file it finds, making the weight the file's duration"
-        >
-          ?
-        </div>
-      </div>
     </div>
     <div class="col">
       <h2>Recent</h2>
