@@ -15,14 +15,11 @@
       "icons/icon.ico"
     ],
     "targets": ["deb", "msi", "dmg"],
-    "createUpdaterArtifacts": true,
-    "externalBin": [
-      "binaries/ffprobe"
-    ]
+    "createUpdaterArtifacts": true
   },
   "productName": "Progressive",
   "mainBinaryName": "progressive",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "identifier": "com.h8m0ss.progressive",
   "plugins": {
     "cli": {

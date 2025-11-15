@@ -1,7 +1,6 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use regex::Regex;
 use std::str;
 use std::{
     fs::{create_dir, read_dir, read_to_string, write},
@@ -9,7 +8,6 @@ use std::{
 };
 use tauri::menu::{MenuBuilder, MenuItemBuilder, SubmenuBuilder};
 use tauri::{Emitter, Listener};
-use tauri_plugin_shell::ShellExt;
 
 #[tauri::command]
 async fn write_file(path: String, value: String) -> Result<(), String> {
@@ -76,39 +74,6 @@ fn read_folder(path: String) -> Vec<String> {
 }
 
 #[tauri::command]
-async fn get_video_duration(app: tauri::AppHandle, path: String) -> f32 {
-    let re = Regex::new(r"duration=(?<dur>\d+)").unwrap();
-    let sidecar_command = app.shell().sidecar("ffprobe").unwrap();
-    let command = sidecar_command.args([path.as_str(), "-show_entries", "format=duration"]);
-
-    let result = match command.output().await {
-        Ok(output) => match str::from_utf8(&output.stdout) {
-            Ok(s) => {
-                println!("stdout: {:?}", s);
-                println!("stderr: {:?}", str::from_utf8(&output.stderr));
-                match re.captures(s) {
-                    Some(caps) => caps["dur"].parse().unwrap(),
-                    None => {
-                        println!("NONE");
-                        0.0
-                    }
-                }
-            }
-            Err(e) => {
-                println!("error: {e:?}");
-                0.0
-            }
-        },
-        Err(e) => {
-            println!("error: {e:?}");
-            0.0
-        }
-    };
-
-    result
-}
-
-#[tauri::command]
 fn is_flatpak() -> bool {
     std::env::var("FLATPAK_ID").is_ok() || 
     std::path::Path::new("/.flatpak-info").exists()
@@ -124,7 +89,6 @@ fn main() {
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_global_shortcut::Builder::new().build())
         .invoke_handler(tauri::generate_handler![
-            get_video_duration,
             read_file,
             write_file,
             read_folder,
@@ -142,7 +106,6 @@ fn main() {
                     &MenuItemBuilder::with_id("new", "New")
                         .accelerator("Ctrl+N")
                         .build(app)?,
-                    &MenuItemBuilder::with_id("new-folder", "New from folder").build(app)?,
                     &MenuItemBuilder::with_id("open", "Open")
                         .accelerator("Ctrl+O")
                         .build(app)?,

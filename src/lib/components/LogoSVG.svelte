@@ -14,7 +14,12 @@
   const rand = v4();
 </script>
 
-<svg viewBox="-5 -5 110 110">
+<svg 
+  viewBox="-5 -5 110 110"
+  preserveAspectRatio="xMidYMid meet"
+  width="100%" 
+  height="100%"
+  >
   <defs>
     <linearGradient id="gradient-{rand}">
       <stop
