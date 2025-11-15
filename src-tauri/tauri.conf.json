@@ -15,10 +15,7 @@
       "icons/icon.ico"
     ],
     "targets": ["deb", "msi", "dmg"],
-    "createUpdaterArtifacts": true,
-    "externalBin": [
-      "binaries/ffprobe"
-    ]
+    "createUpdaterArtifacts": true
   },
   "productName": "Progressive",
   "mainBinaryName": "progressive",

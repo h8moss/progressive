@@ -4,7 +4,6 @@ import type { ProgressNode } from "../ProgressNode";
 import { open, save } from "@tauri-apps/plugin-dialog";
 import {
   makeNodeValid,
-  nodeFromDir,
   nodeFromJsonPath,
 } from "../ProgressNode/util";
 import { invoke } from "@tauri-apps/api/core";
@@ -70,28 +69,6 @@ const appEventListener = async ({
       path.set(null);
       console.log("NEEDED SAVE 1");
       needsSave.set(true);
-    }),
-    await listen("new-folder", async (_) => {
-      const selection = await open({
-        directory: true,
-        title: "Pick a folder",
-        multiple: false,
-      });
-
-      if (selection && !Array.isArray(selection)) {
-        isLoading.set(0.0);
-        const result = await nodeFromDir(selection, (v) => {
-          isLoading.set(v * 100);
-          console.log({ v });
-        });
-        isLoading.set(null);
-        if (result) {
-          progressNode.set(result);
-        }
-        path.set(null);
-        console.log("NEEDED SAVE 2");
-        needsSave.set(true);
-      }
     }),
     await listen("open", async (_) => {
       const selection = await open({

@@ -60,36 +60,21 @@ Personalize your experience with custom color schemes.
 1. Install dependencies
     Check tauri's [prerequisites](https://tauri.app/start/prerequisites/) and follow the instructions. You will need to install NodeJS, Rust, and a few other platform-dependent dependencies.
 
-2. Download ffmpeg from the [official website](https://ffmpeg.org/download.html)
-
-3. Clone the repository:
+2. Clone the repository:
    ```bash
    git clone https://github.com/h8moss/progressive
    cd progressive
    ```
-4. Get your current target's triple by running this command:
-    ```
-    rustc -Vv | Select-String "host:" | ForEach-Object {$_.Line.split(" ")[1]}
-    ```
-    or on linux/macOS:
-    ```
-    rustc -Vv | grep host | cut -f2 -d' '
-    ```
-    Remember this value for next step
 
-5. Move ffprobe from the bin folder in ffmpeg to
-    `path/to/progressive/src-tauri/binaries`
-    and rename it to:
-    `ffprobe-{TARGET TRIPLE FROM PREVIOUS STEP}`
-
-6. Install dependencies:
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-7. Build the project:
+4. Build the project:
    ```bash
    npm run tauri build
+
    ```
 If you encounter any issues during installation or have suggestions for improving cross-platform support, please open an issue on our [GitHub repository](https://github.com/h8moss/progressive/issues).
 ## 🖱️ Usage
