@@ -6,7 +6,7 @@ import {
   SUNSET_THEME,
 } from "../ProgressNode/constants";
 import type { NodeTheme } from "../ProgressNode/types";
-import { appDataDir, join } from "@tauri-apps/api/path";
+import { appConfigDir, join } from "@tauri-apps/api/path";
 
 let themes: null | NodeTheme[] = null;
 const defaultThemes: NodeTheme[] = [
@@ -18,8 +18,8 @@ const defaultThemes: NodeTheme[] = [
 
 const getThemes = async (): Promise<NodeTheme[]> => {
   if (!themes) {
-    const dataDir = await appDataDir();
-    const path = await join(dataDir, "\\themes");
+    const configDir = await appConfigDir();
+    const path = await join(configDir, "\\themes");
 
     const customThemesData = (await invoke("read_folder", {
       path,

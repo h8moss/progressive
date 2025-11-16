@@ -1,5 +1,5 @@
 import { invoke } from "@tauri-apps/api/core";
-import { appDataDir, join } from "@tauri-apps/api/path";
+import { appConfigDir, join } from "@tauri-apps/api/path";
 
 interface Params {
   title: string;
@@ -7,8 +7,8 @@ interface Params {
 }
 
 const removeData = async ({ title, path }: Params): Promise<void> => {
-  const dataDir = await appDataDir();
-  const joinedPath = await join(dataDir, "\\recent.json");
+  const configDir = await appConfigDir();
+  const joinedPath = await join(configDir, "\\recent.json");
   const currentDataStr = (await invoke("read_file", {
     path: joinedPath,
   })) as string;
@@ -23,7 +23,7 @@ const removeData = async ({ title, path }: Params): Promise<void> => {
   }
 
   await invoke("write_file", {
-    path: dataDir + "\\recent.json",
+    path: configDir + "\\recent.json",
     value: JSON.stringify(newData),
   });
 }
