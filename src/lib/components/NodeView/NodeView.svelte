@@ -363,8 +363,8 @@
           {:else}
             <div class="logo">
               <LogoSvg
-                offset={$progress * 100}
-                progress={$progress * 100}
+                offset={(($progress / getTotalWeight(node)) * 100) -100}
+                progress={($progress / getTotalWeight(node)) * 100}
                 stopColorA={configuration.theme.highlightColorA}
                 stopColorB={configuration.theme.highlightColorB}
               />
