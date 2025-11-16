@@ -26,6 +26,131 @@
   </screenshots>
   <url type="homepage">https://github.com/h8moss/progressive</url>
   <releases>
-    <release version="3.0.0" date="2025-11-14"/>
+    <release version="3.0.0" date="2025-11-14">
+      <description>
+        <p>Flathub release</p>
+        <ul>
+          <li>Removed old ffmpeg dependency code</li>
+          <li>Fixed issue in linux where you couldn't see the checkboxes</li>
+          <li>Renamed app to "progressive"</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.0" date="2025-11-11">
+      <description>
+        <p>Linux release</p>
+        <ul>
+          <li>For windows users, there's been no changes, this was a simple release to prepare the app for the linux release.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.1" date="2025-03-31">
+      <description>
+        <p>Bug fix</p>
+        <ul>
+          <li>Small fix where the logo when the application runs was not animated</li>
+        </ul>
+      </description>
+    </release>
+      <release version="2.1.0" date="2025-03-22">
+      <description>
+        <p>Updater</p>
+        <ul>
+          <li>Fixed an issue where updates were not being detected at all!</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.1" date="2025-03-20">
+      <description>
+        <p>Bug fixes</p>
+        <ul>
+          <li>Fixed issue where it could not open files made from before 2.0.0</li>
+          <li>Updated welcome screen UI</li>
+          <li>Fixed "new file from directory"</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.0" date="2025-01-07">
+      <description>
+        <p>UI Overhaul</p>
+        <ul>
+          <li>Removed need for ffmpeg to be installed and in path for the app to work</li>
+          <li>Added new type of tasks; slider tasks</li>
+          <li>Added signed automatic updates</li>
+          <li>Greatly improved UI</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.2" date="2024-09-22">
+      <description>
+        <p>Feature update</p>
+        <ul>
+          <li>The executable file is now called "Progress Tracker" instead of "progress tracker"</li>
+          <li>Various visual bugs</li>
+          <li>Non-existing items in "recently used" now display an error message</li>
+          <li>Configuration can now be "unset"</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.1" date="2024-09-16">
+      <description>
+        <p>Bug fixes</p>
+        <ul>
+          <li>Removed visual bug where all progress bars would reset after changing just one</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.0" date="2023-08-06">
+      <description>
+        <p>Feature update</p>
+        <ul>
+          <li>Menu button to fold all tasks</li>
+          <li>Shortcuts for some menu options</li>
+          <li>Themes and labels</li>
+          <li>Custom themes</li>
+          <li>Recently used now works</li>
+          <li>Made checkmarks look like the logo of the app</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.2" date="2023-07-24">
+      <description>
+        <p>Performance update</p>
+        <ul>
+          <li>Added sorting options for childful tasks</li>
+          <li>Fixed bug where tasks would lose their natural sorting when created from folder</li>
+          <li>Fixed bug where cmd windows would pop up when creating tasks from folder</li>
+          <li>Significantly improved the speed of creating tasks from a folder</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.0" date="2023-06-09">
+      <description>
+        <p>Feature update</p>
+        <ul>
+          <li>Added an arrow icon for childful tasks</li>
+          <li>Added editing to the main task's title</li>
+          <li>New loading screen</li>
+          <li>Faster task from folder generator</li>
+          <li>Added configuration option to right click context menu and main task</li>
+          <li>Fixed bug where you could show the default context menu</li>
+          <li>Fixed bug where items would duplicate when renaming them</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.1" date="2023-06-04">
+      <description>
+        <p>Bug fixes</p>
+        <ul>
+          <li>Fixed bug where main progress bar would not update itself.</li>
+          <li>Fixed bug where, after opening a file with a weight interpretation, the weight would still be displayed as a number</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.0" date="2023-06-01">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
   </releases>
 </component>
