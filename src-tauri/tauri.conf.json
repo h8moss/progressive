@@ -14,12 +14,16 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "targets": ["deb", "msi", "dmg"],
+    "targets": [
+      "deb",
+      "msi",
+      "dmg"
+    ],
     "createUpdaterArtifacts": true
   },
   "productName": "Progressive",
   "mainBinaryName": "progressive",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "identifier": "com.h8m0ss.progressive",
   "plugins": {
     "cli": {
