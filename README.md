@@ -32,9 +32,6 @@ Assign importance to your tasks. Heavier tasks contribute more to your overall p
 ### 🔢 Weight Interpretation
 Weights can be interpreted and rendered as different units, making it easier to understand task importance in various contexts.
 
-### 🎥 Automatic Video Weights
-Create TODO lists based on video durations in your filesystem. (Thanks to [ffmpeg](https://ffmpeg.org/download.html))
-
 ### 🎨 Custom Themes
 Personalize your experience with custom color schemes.
 
@@ -51,11 +48,12 @@ Personalize your experience with custom color schemes.
 2. Download the latest version of the application.
 3. Run the installer and follow the prompts.
 
+### Linux
+Install the app from [its flathub page](https://flathub.org/en/apps/io.github.h8moss.progressive)
+
 ### Building from source (Windows, Linux and MacOS)
 > [!WARNING]
-> The application has only been tested on Windows and was designed with Windows in mind. It may or may not work correctly on other systems.
-> 
-> There are currently no official releases for Linux or MacOS. However, if there's sufficient user interest in testing and bug reporting, we may consider creating official releases for these platforms in the future.
+> The application has not been tested in MacOS, it may or may not work correctly.
 
 1. Install dependencies
     Check tauri's [prerequisites](https://tauri.app/start/prerequisites/) and follow the instructions. You will need to install NodeJS, Rust, and a few other platform-dependent dependencies.
@@ -74,8 +72,8 @@ Personalize your experience with custom color schemes.
 4. Build the project:
    ```bash
    npm run tauri build
-
    ```
+
 If you encounter any issues during installation or have suggestions for improving cross-platform support, please open an issue on our [GitHub repository](https://github.com/h8moss/progressive/issues).
 ## 🖱️ Usage
 
@@ -121,7 +119,6 @@ We welcome contributions! Here's how you can help:
 - [ ] Custom weight units
 - [ ] Setting default theme
 - [ ] Duplicating tasks
-- [ ] Linux / MacOS build
 
 ## ❓ Frequently Asked Questions
 
@@ -150,7 +147,6 @@ Icons sourced from [SVG Repo](https://www.svgrepo.com).
 ### Technologies
 - [Tauri](https://tauri.app/)
 - [Svelte](https://svelte.dev/)
-- [FFmpeg](https://ffmpeg.org/)
 
 ---
 
