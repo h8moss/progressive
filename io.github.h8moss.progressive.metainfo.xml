@@ -28,4 +28,8 @@
   <releases>
     <release version="3.0.0" date="2025-11-14"/>
   </releases>
+  <branding>
+    <color type="primary" scheme_preference="light">#7dbbf5</color>
+    <color type="primary" scheme_preference="dark">#4d7ac1</color>
+  </branding>
 </component>
