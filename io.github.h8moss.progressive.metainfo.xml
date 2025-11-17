@@ -25,6 +25,7 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/h8moss/progressive</url>
+  <releases>
     <release version="3.0.2" date="2025-11-17">
       <description>
         <p>Linux bug fixes</p>
@@ -43,7 +44,6 @@
         </ul>
       </description>
     </release>
-  <releases>
     <release version="3.0.0" date="2025-11-14">
       <description>
         <p>Flathub release</p>
