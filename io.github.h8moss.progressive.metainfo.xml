@@ -25,6 +25,14 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/h8moss/progressive</url>
+    <release version="3.0.2" date="2025-11-17">
+      <description>
+        <p>Linux bug fixes</p>
+        <ul>
+          <li>Fixed small metadata error</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.1" date="2025-11-15">
       <description>
         <p>Linux bug fixes</p>
