@@ -23,7 +23,7 @@ A simple, open-source TODO list and progress tracker for Windows and Linux. Buil
 
 ### 📊 Nested and slider tasks
 Organize your work with hierarchical task structures. Break down complex projects into manageable subtasks and keep exact progress on each of them.
-![Nested and slider tasks demo](https://github.com/user-attachments/assets/39b6dd4f-aae9-4f2c-b2e9-5a5f3cd598b0)
+![Nested and slider tasks demo](https://raw.githubusercontent.com/h8moss/progressive/refs/heads/main/screenshots/screenshot1.png)
 
 ### ⚖️ Task Weights
 Assign importance to your tasks. Heavier tasks contribute more to your overall progress.
